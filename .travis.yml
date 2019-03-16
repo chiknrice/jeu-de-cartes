@@ -1,0 +1,13 @@
+language: java
+
+jdk:
+  - oraclejdk8
+
+git:
+  depth: 3
+
+branches:
+  only:
+    - master
+    # Build tags that match this regex in addition to building the master branch.
+    - /^v[0-9]{1,3}\.[0-9]{1,3}/
